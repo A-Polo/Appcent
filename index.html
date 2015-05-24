@@ -15,7 +15,11 @@
             <span class="ac-mobile-menu pull-right"></span>
             <ul class="ac-nav">
                 <li class="ac-lang pull-right">
+                    <div>
                         <a class="ac-dropdown-icon ac-nav-item" href="#">En</a>
+                        <span class="ac-arrow"></span>
+                    </div>
+
                     <ul class="ac-dropdown">
                         <li><a class="ac-nav-item" href="#">En</a></li>
                         <li><a class="ac-nav-item" href="#">Fr</a></li>
@@ -43,14 +47,17 @@
                     <a class="ac-btn ac-android-btn"></a>
                 </div>
                 <div class="ac-phone-input-container">
-                    <a class="ac-sent-app-btn ac-pc">Send me the app to a phone # or email</a>
+                    <div class="ac-sent-app-container">
+                        <a class="ac-sent-app-btn ac-pc">Send me the app to a phone # or email</a>
+                    </div>
+                        <div class="ac-phone-input__block hide">
+                        <input type="text" value="">
+                        <button class="ac-phone-input__btn"></button>
+                    </div>
                 </div>
                 <div class="ac-free-gift-card-container">
                     <span class="float_left"><a href="#">Get free Gift Card</a> for</span>
                     <div class="ac-free-gift-card-logos pull-left"></div>
-                </div>
-                <div class="ac-send-again">
-                    <p>Message has been sent to you.<br>I didn’t receive anything. <span><i></i>0:16 Send again</span></p>
                 </div>
             </div>
             <div class="ac-iphone ac-mobile col-lg-6"></div>
@@ -92,7 +99,12 @@
         <div class="ac-popup-close"></div>
         <div class="ac-popup-content">
             <p>Open this website using your <span>iPhone</span>, <span>iPad</span> or <span>Android</span> device and click the “Get Appcent” button to download the official AppCent app.</p>
-            <p>Or Fill in your e-mail address or phone number to get Appcent link as letter or SMS.</p>
+            <p class="ac-form-lable">Or Fill in your e-mail address or phone number to get Appcent link as letter or SMS.</p>
+            <form class="ac-form-group">
+                <input class="ac-form-field ac-form-search_field" type="text" placeholder="E-mail or Phone #">
+                <button class="ac-form-field ac-form-btn">Send</button>
+            </form>
+            <div class="ac-form-iphone"></div>
         </div>
     </div>
 </div>
